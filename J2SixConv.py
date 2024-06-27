@@ -20,6 +20,7 @@ def check_vowel(c):
 kks: kakasi = kakasi()
 tk: Tokenizer = Tokenizer()
 
+output: list[str] = list()
 count: int = 0
 while 1:
     raw_input: str = input("日本語を入力してください:")
@@ -60,4 +61,7 @@ while 1:
         for i in range(0, 5):
             if rome_kata[0] == vowelUpper[i]:
                 rome_kata = vowelLower[i] + rome_kata[1:]
-        print(hira + " : " + rome_kata)
+        output.append(rome_kata)
+    print(raw_input+":"+" ".join(output))
+    del output[0:]
+        
