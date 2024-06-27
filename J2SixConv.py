@@ -23,6 +23,7 @@ tk: Tokenizer = Tokenizer()
 count: int = 0
 while 1:
     raw_input: str = input("日本語を入力してください:")
+    raw_input.replace("ー","")
     #形態素ごとに分割
     for token in tk.tokenize(raw_input):
         
