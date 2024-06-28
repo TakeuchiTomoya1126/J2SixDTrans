@@ -9,7 +9,7 @@ import jaconv
 #日本語を入力することで対応した六竜語が返答される
 
 def check_vowel(c):
-    check_arr = {"a","i","u","e","o"," ","-"}
+    check_arr = {"a","i","u","e","o"}
     for check_char in check_arr:
         if c == check_char:
             return True
